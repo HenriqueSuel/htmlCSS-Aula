@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Danfo&family=Poetsen+One&display=swap');
+
+#lista1 {
+    list-style-type: decimal;
+    color: #0000ff;
+    font-family: "Poetsen One", sans-serif;
+}
+
+
+#lista2 {
+    list-style-type: lower-roman;
+    background: blue;
+    color: white;
+    font-family: "Poetsen One", sans-serif;
+}
+
+
+.desafio1 {
+    font-family: "Danfo", serif;
+    color:orange;
+    margin: 30px;
+}
+
