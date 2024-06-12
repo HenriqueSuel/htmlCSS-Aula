@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      ul {
+        list-style: none;
+      }
+
+      .menu {
+        display: flex;
+        padding: 20px;
+
+        background: blue;
+      }
+
+      .menu__item {
+        background: yellow;
+        padding: 20px 10px;
+        margin: 10px;
+        position: relative;
+      }
+
+      .submenu__item {
+        display: none;
+        background: yellow;
+      }
+
+      .submenu {
+        position: absolute;
+        top: 40px;
+        right: 0px;
+      }
+
+      .menu__item:hover .submenu__item {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="menu">
+      <li class="menu__item">
+        <a href="">Item 1</a>
+      </li>
+
+      <li class="menu__item">
+        <a href="">Item 2</a>
+        <ul class="submenu">
+          <li class="submenu__item">
+            <a href="">SubItem 1</a>
+          </li>
+          <li class="submenu__item">
+            <a href="">SubItem 2</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu__item">
+        <a href="">Item 03</a>
+      </li>
+
+      <li class="menu__item">
+        <a href="">Item 04</a>
+      </li>
+    </ul>
+  </body>
+</html>

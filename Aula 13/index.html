@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      button:hover {
+        background: white;
+        color: green;
+        border: 1px solid green;
+      }
+
+      button {
+        padding: 5px 24px;
+        background: green;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 1px solid transparent;
+        border-radius: 3px;
+      }
+
+      a {
+        color: blue;
+      }
+      a:active {
+        color: green;
+      }
+
+      .link:visited {
+        color: yellowgreen;
+      }
+
+      .control-input:focus {
+        background-color: brown;
+      }
+
+      li:nth-child(2n) {
+        background: blue;
+        color: white;
+      }
+
+      li:not(.item) {
+        color: orange;
+      }
+
+      .input-personalizado:checked {
+        margin-left: 30px;
+      }
+
+      button:disabled {
+        cursor: not-allowed;
+        background: gray;
+      }
+
+      .input-email:valid {
+        background: green;
+        color: white;
+      }
+
+      .input-text:required {
+        border: 1px solid red;
+      }
+
+      .input-placeholder::placeholder {
+        color: blue;
+      }
+
+      p::first-letter {
+        font-size: 40px;
+        color: blue;
+        font-weight: bolder;
+        margin-right: 15px;
+      }
+
+      p::first-line {
+        background: orange;
+      }
+
+      p::selection {
+        color: white;
+        background: green;
+      }
+
+      ::marker {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nemo quia
+      ratione alias maxime! Neque ex ipsam ducimus veniam aliquid nostrum,
+      perspiciatis sit eos reprehenderit, iure, quibusdam necessitatibus quia
+      exercitationem!
+    </p>
+    <input
+      class="input-placeholder"
+      type="text"
+      placeholder="Digite seu nome"
+    />
+    <input class="input-email" type="email" />
+    <input class="input-text" type="text" required />
+
+    <label for="">Selecionar</label>
+    <input class="input-personalizado" type="checkbox" />
+
+    <button disabled>Enviar</button>
+
+    <a href="https://www.google.com/">Suel</a>
+    <a class="link" href="https://www.youtube.com/">Henrique</a>
+
+    <input class="control-input" type="text" />
+
+    <button>Adicionar item na minha lista</button>
+
+    <ul>
+      <li class="item">item 01</li>
+      <li>item 02</li>
+      <li>item 03</li>
+      <li>item 04</li>
+      <li>item 05</li>
+      <li>item 06</li>
+      <li>item 07</li>
+      <li>item 08</li>
+      <li>item 09</li>
+      <li>item 10</li>
+    </ul>
+  </body>
+</html>
