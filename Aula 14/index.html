@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .flex {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+      }
+
+      .quadrado {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        margin: 8px;
+      }
+
+      .linear-gradient {
+        background: linear-gradient(red, yellow);
+      }
+      .linear-gradient--top {
+        background: linear-gradient(to top, red, yellow);
+      }
+      .linear-gradient--left {
+        background: linear-gradient(to left, red, yellow);
+      }
+      .linear-gradient--right {
+        background: linear-gradient(to right, red, yellow);
+      }
+      .linear-gradient--bottom {
+        background: linear-gradient(to bottom, red, yellow);
+      }
+      .linear-gradient--deg {
+        background: linear-gradient(180deg, red, yellow);
+      }
+      .linear-gradient--deg {
+        background: radial-gradient(red, yellow);
+      }
+
+      .tranform {
+        transform: translate(20px, 30px);
+        background: blue;
+      }
+
+      .tranform--rotate {
+        margin-top: 80px;
+
+        background: red;
+      }
+
+      .tranform--rotate:hover {
+        transform: rotate(20deg);
+      }
+
+      .tranform--rotateX {
+        background: yellow;
+      }
+      .tranform--rotateX:hover {
+        transform: rotateX(50deg);
+      }
+
+      .tranform--rotateY {
+        background: yellow;
+      }
+      .tranform--rotateY:hover {
+        transform: rotateY(93deg);
+      }
+
+      .tranform--rotateZ {
+        background: orange;
+      }
+      .tranform--rotateZ:hover {
+        transform: rotateZ(30deg);
+      }
+
+      .scale:hover {
+        transform: scale(2, 2);
+      }
+
+      .skew {
+        transform: skew(-27deg, 34deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex">
+      <div class="quadrado linear-gradient"></div>
+      <div class="quadrado linear-gradient--top"></div>
+      <div class="quadrado linear-gradient--left"></div>
+      <div class="quadrado linear-gradient--right"></div>
+      <div class="quadrado linear-gradient--bottom"></div>
+      <div class="quadrado linear-gradient--deg"></div>
+      <div class="quadrado linear-gradient--deg"></div>
+    </div>
+    <!-- Tranform -->
+
+    <div class="flex">
+      <div class="quadrado tranform"></div>
+      <div class="quadrado tranform--rotate"></div>
+      <div class="quadrado tranform--rotateX">Henriqeu</div>
+      <div class="quadrado tranform--rotateY">Henriqeu</div>
+      <div class="quadrado tranform--rotateZ">Henriqeu</div>
+    </div>
+    <!-- Scale -->
+
+    <div class="flex">
+      <div class="quadrado scale">Henrique</div>
+    </div>
+
+    <div class="flex">
+      <div class="quadrado skew">Henrique</div>
+    </div>
+  </body>
+</html>
