@@ -1,0 +1,53 @@
+h1 {
+  font-family: "Playwrite PL";
+  color: #720404;
+  background: linear-gradient(to top, blue, red);
+}
+
+.fixed {
+}
+
+.sticky {
+  /* position: sticky; */
+  top: 0px;
+  background: red;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  top: 0;
+}
+
+.absolute:hover {
+  transform: translateY(15px);
+}
+
+.transicoes {
+  background: yellow;
+}
+
+.transicoes:hover {
+  background: red;
+  transition: all 1s ease;
+}
+
+.animacoes {
+  background: blue;
+  animation-duration: 2s;
+  animation-name: animacao;
+  animation-iteration-count: infinite;
+  /* animation: infinite 2s animacao; */
+}
+
+@keyframes animacao {
+  0% {
+    transform: translate(15px);
+  }
+  100% {
+    background: yellow;
+  }
+}
