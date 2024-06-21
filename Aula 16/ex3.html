@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      header {
+        background: yellow;
+      }
+
+      nav {
+        background: black;
+        color: white;
+      }
+
+      aside {
+        background: gray;
+        color: white;
+      }
+
+      article {
+        background: rgb(225, 225, 225);
+      }
+
+      footer {
+        background: yellow;
+      }
+
+      .flex {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .flex__row {
+        display: flex;
+        height: 200px;
+      }
+
+      .row__item {
+        width: 100px
+      }
+
+      .row__item--article {
+        width: 100%;
+      }
+
+      .d-flex {
+        display: flex;
+      }
+
+      .orange {
+        background: orange;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div class="d-flex ">
+        <div class="orange">Navegação</div>
+        <div>
+            <div class="flex">
+                <header>Header</header>
+                <div class="flex__row">
+                  <nav class="row__item">Nav</nav>
+                  <aside class="row__item">Aside</aside>
+                  <article class="row__item--article">Article</article>
+                </div>
+                <footer>Foooter</footer>
+              </div>
+        </div>
+    </div>
+  </body>
+</html>
