@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+          "item01 item01 item02 item02 item02"
+          "item01 item01 item03 item03 item04"
+          "item05 item05 item03 item03 item06";
+      }
+
+      .item01 {
+        grid-area: item01;
+      }
+      .item02 {
+        grid-area: item02;
+      }
+      .item03 {
+        grid-area: item03;
+      }
+      .item04 {
+        grid-area: item04;
+      }
+      .item05 {
+        grid-area: item05;
+      }
+      .item06 {
+        grid-area: item06;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="grid">
+      <div class="item01">item 01</div>
+      <div class="item02">item 02</div>
+      <div class="item03">item 03</div>
+      <div class="item04">item 04</div>
+      <div class="item05">item 05</div>
+      <div class="item06">item 06</div>
+    </section>
+  </body>
+</html>

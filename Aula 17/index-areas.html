@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .grid {
+        display: grid;
+        grid-template-areas:
+          "cabecao cabecao "
+          "navegacao corpinho "
+          "navegacao footer ";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 8fr 1fr;
+      }
+
+      nav {
+        grid-area: navegacao;
+        background: orange;
+        color: white;
+      }
+
+      header {
+        grid-area: cabecao;
+        background: rgb(27, 133, 133);
+        color: white;
+      }
+
+      section {
+        grid-area: corpinho;
+        background: blueviolet;
+        color: white;
+      }
+
+      aside {
+        grid-area: barraLateral;
+        background-color: rgb(233, 195, 126);
+      }
+
+      footer {
+        grid-area: footer;
+        background: rgb(27, 133, 133);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="grid">
+      <section>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo aperiam
+        voluptatem, magni velit, impedit itaque quasi maxime, commodi id eius
+        eum quae alias pariatur repellat qui expedita odit dolores quia.
+      </section>
+      <nav>Navegação</nav>
+      <header>Cabecalho</header>
+
+      
+      <footer>Footer</footer>
+<!--       <aside>Barra lateral</aside> -->
+    </section>
+  </body>
+</html>
