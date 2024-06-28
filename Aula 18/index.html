@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        background: orange;
+      }
+
+      @media only screen and (min-width: 0px) and (max-width: 480px) {
+        body {
+          background: yellow;
+        }
+      }
+
+      @media screen and (min-width: 481px) and (max-width: 768px) {
+        body {
+          background: blue;
+        }
+      }
+
+      @media screen and (min-width: 769px) and (max-width: 1279px) {
+        body {
+          background: green;
+        }
+      }
+      @media screen and (min-width: 1280px) {
+        body {
+          background: red;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="width: 50%;">Mobile -> cor está amarela -> 0 - 480</h1>
+    <h1>Tablets -> cor está azul -> 481 - 768</h1>
+    <h1>Laptops -> cor está verde -> 769 - 1279</h1>
+    <h1>Desktop -> cor está vermelha -> maior 1280</h1>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, 100px);
+        gap: 10px;
+        grid-template-areas:
+          "header header"
+          "main  aside";
+      }
+
+      @media only screen and (min-width: 480px) and (max-width: 480px) {
+        .grid {
+          grid-template-areas:
+            "header header"
+            "main  main"
+            "aside aside";
+        }
+      }
+
+      header {
+        grid-area: header;
+        background: red;
+      }
+
+      main {
+        grid-area: main;
+        background: green;
+      }
+      aside {
+        grid-area: aside;
+        background: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <header>Header</header>
+      <main>Content</main>
+      <aside>SideBar</aside>
+    </div>
+  </body>
+</html>

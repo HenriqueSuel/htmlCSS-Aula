@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+
+        grid-template-areas:
+          "header" "content"
+          "contentImage"
+          "footer";
+      }
+
+      .header {
+        grid-area: header;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .content {
+        grid-area: content;
+      }
+      .content-image {
+        margin: auto;
+        grid-area: contentImage;
+      }
+      .footer {
+        grid-area: footer;
+        /* margin: auto;
+        text-align: center; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .nav__items {
+        display: flex;
+        list-style-type: none;
+      }
+
+      .nav__items li {
+        margin: 0 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <header class="header">
+        <img
+          class="header__logo"
+          width="100px"
+          src="https://www.creativefabrica.com/wp-content/uploads/2021/03/20/Mountain-logo-Design-Graphics-9785421-1-1-580x435.png"
+          alt="logo"
+        />
+        <nav class="nav">
+          <ul class="nav__items">
+            <li><a href="">Home</a></li>
+            <li><a href="">Products </a></li>
+            <li><a href="">Company</a></li>
+            <li><a href="">blog</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="content">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus enim
+          eveniet tempore deserunt? Assumenda consectetur eaque fugit doloremque
+          eveniet non dicta. Velit, omnis. Cupiditate fugit eius ullam fugiat
+          libero mollitia.
+        </p>
+      </section>
+
+      <section class="content-image">
+        <img
+          width="200"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/1024px-LEGO_logo.svg.png"
+          alt=""
+        />
+      </section>
+
+      <footer class="footer">
+        <img
+          width="100"
+          src="https://www.creativefabrica.com/wp-content/uploads/2021/03/20/Mountain-logo-Design-Graphics-9785421-1-1-580x435.png"
+          alt=""
+        />
+        <h3>RR SS</h3>
+        <h3>Contato</h3>
+      </footer>
+    </div>
+  </body>
+</html>
